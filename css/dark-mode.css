@@ -1,0 +1,13 @@
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #fff;
+        --secondary-color: #bbb;
+        --accent-color: #ffcc00;
+        --background-color: #333;
+        --text-color: #f4f4f4;
+        --text-light-color: #333;
+        --border-color: #555;
+        --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+}

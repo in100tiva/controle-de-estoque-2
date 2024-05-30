@@ -1,0 +1,49 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+    background-color: var(--text-light-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+    transition: background-color var(--transition-speed);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+table tr:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+@media (min-width: 320px) {
+    table th, table td {
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    table th, table td {
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    table th, table td {
+        padding: 1rem;
+    }
+}
