@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #388E3C;
@@ -6,7 +9,7 @@
     --text-color: #212121;
     --text-light-color: #FFFFFF;
     --border-color: #E0E0E0;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: "Sevillana", cursive;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s;
 }
