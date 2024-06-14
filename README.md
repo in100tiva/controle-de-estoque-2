@@ -3,6 +3,9 @@
 
 Esta aplicação web e mobile é destinada ao controle de estoque para supermercados, com foco no acompanhamento de produtos próximos da validade. A aplicação permite adicionar, editar, remover e visualizar produtos, além de gerar relatórios de produtos que estão próximos do vencimento.
 
+### Link para o chat GPT:
+https://chatgpt.com/share/cebb9cc6-1582-4b41-8c70-1cf713ba01c9
+
 ## Funcionalidades
 
 - **Acompanhamento da validade dos produtos:** Exibe uma lista de produtos com suas respectivas datas de validade, destacando os produtos próximos da validade.
