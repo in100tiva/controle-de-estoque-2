@@ -3,7 +3,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--text-light-color);
+    background-color: var(--background-color);
     padding: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -17,13 +17,15 @@ form:hover {
 
 form label {
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--text-light-color);
 }
 
 form input, form select, form button {
     padding: 0.75rem;
     border: 1px solid var(--border-color);
     border-radius: 5px;
+    background-color: var(--text-light-color);
+    color: var(--background-color);
     transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
@@ -67,4 +69,18 @@ form input:focus + .tooltip, form select:focus + .tooltip {
     form {
         padding: 2rem;
     }
+}
+
+/* Login Container Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.error-message {
+    color: var(--accent-color);
+    font-weight: bold;
 }

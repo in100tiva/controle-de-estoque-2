@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/tables.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.0/src/css/icons.min.css">
 </head>
@@ -85,11 +86,34 @@
             <div id="notification-area"></div>
             <div id="reports">
                 <h3>Relatórios</h3>
+                <label for="days-filter">Filtrar por dias até vencimento:</label>
+                <select id="days-filter">
+                    <option value="15">15 dias</option>
+                    <option value="30">30 dias</option>
+                    <option value="45">45 dias</option>
+                </select>
                 <button id="generate-report">Gerar Relatório</button>
                 <div id="report-output"></div>
             </div>
         </section>
     </main>
+    <!-- Modal para aviso -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Não é possível adicionar itens com data de validade já passada.</p>
+        </div>
+    </div>
+    <!-- Modal de Confirmação -->
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <p id="confirm-message"></p>
+            <button id="confirm-yes">Sim</button>
+            <button id="confirm-no">Não</button>
+        </div>
+    </div>
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/report.js"></script>
+    <script type="module" src="js/notification.js"></script>
 </body>
 </html>
